@@ -38,15 +38,6 @@ public class StringCalculatorTest {
 		assertEquals(3, calculator.add("//;\n1;2"));
 	}
 
-//	@Test
-//	public void testCustomDelimiterWithDifferentCharacter() {
-//		assertEquals(10, calculator.add("//|\n2|3|5"));
-//	}
-	@Test
-	public void testCustomDelimiterWithDifferentCharacter() {
-		assertEquals(10, calculator.add("//|\n2|3|5"));
-	}
-
 	@Test
 	public void testNegativeNumberThrowsException() {
 		Exception exception = assertThrows(IllegalArgumentException.class, () -> {
